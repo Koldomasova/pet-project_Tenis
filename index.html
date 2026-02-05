@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Tennis</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- <div class="overlay-wrapper overlay"></div> -->
+        <div class="wrapper">
+          <header class="header container">
+            <a href="#" class="header-logo">
+              <img src="icons/logo.svg" alt="" width="153px" height="46px" />
+            </a>
+            <nav class="header-menu">
+              <ul class="header-menu-list">
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">Главная</a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">О клубе</a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">Турниры</a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">Услуги</a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">Детский теннис</a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">Галерея</a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">Цены</a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-icons">
+              <ul class="header-icons-list">
+                <li class="header-icons-item">
+                  <a href="#" class="header-icons-youtube">
+                    <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28.797 3.40986C28.634 2.82827 28.3164 2.30172 27.878 1.8862C27.4273 1.4579 26.8748 1.15153 26.2728 0.995997C24.0197 0.402128 14.9929 0.402129 14.9929 0.402129C11.2297 0.359313 7.46748 0.547626 3.72739 0.966004C3.12535 1.13302 2.57392 1.44624 2.12214 1.8778C1.67824 2.30491 1.35671 2.83159 1.18875 3.40866C0.785271 5.58228 0.589233 7.78931 0.60328 10C0.588883 12.2087 0.784439 14.415 1.18875 16.5913C1.35311 17.166 1.67344 17.6903 2.11854 18.1138C2.56365 18.5373 3.11792 18.8433 3.72739 19.0052C6.01048 19.5979 14.9929 19.5979 14.9929 19.5979C18.7609 19.6408 22.5279 19.4524 26.2728 19.034C26.8748 18.8785 27.4273 18.5721 27.878 18.1438C28.3219 17.7203 28.6375 17.1936 28.7958 16.6201C29.2099 14.4474 29.4112 12.2394 29.3969 10.0276C29.428 7.80642 29.227 5.58806 28.797 3.40866V3.40986ZM12.1231 14.1079V5.89331L19.6335 10.0012L12.1231 14.1079Z" fill="#8D86C9"/>
+                      </svg>
+                  </a>
+                </li>
+                <li class="header-icons-item">
+                  <a href="#" class="header-icons-vk">
+                    <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.953 1.32754C30.2081 2.01684 29.4246 3.62521 27.6027 6.15265C27.3476 6.4973 27.0197 6.95683 26.6188 7.53125C25.7807 8.60349 25.307 9.31194 25.1977 9.65659C25.0155 10.1161 25.0884 10.5565 25.4163 10.9777C25.5985 11.2075 26.0176 11.6671 26.6735 12.3564H26.7281V12.4138C28.2222 13.8307 29.2242 15.037 29.7344 16.0326L29.8437 16.2624L29.953 16.6932V17.2389L29.5704 17.6697L28.6412 17.8708L24.6511 17.9856C24.396 18.0239 24.0954 17.9856 23.7492 17.8708C23.4031 17.7559 23.1389 17.641 22.9567 17.5261L22.6287 17.2963C22.3008 17.0666 21.9364 16.7219 21.5356 16.2624C21.1347 15.8029 20.7794 15.3816 20.4697 14.9987C20.16 14.6157 19.8411 14.2998 19.5132 14.0509C19.1852 13.802 18.8937 13.7158 18.6386 13.7924C18.6022 13.7924 18.5567 13.8115 18.502 13.8498C18.4473 13.8881 18.3562 13.9743 18.2287 14.1083C18.1012 14.2424 17.9918 14.4051 17.9008 14.5966C17.8097 14.7881 17.7277 15.0657 17.6548 15.4295C17.5819 15.7933 17.5455 16.2241 17.5455 16.7219C17.5455 16.8751 17.5273 17.0187 17.4908 17.1527C17.4544 17.2868 17.4179 17.3921 17.3815 17.4687L17.3268 17.5261C17.1082 17.7559 16.8167 17.8708 16.4523 17.8708H14.7032C13.938 17.9473 13.1637 17.8708 12.3802 17.641C11.5968 17.4112 10.9135 17.1144 10.3305 16.7506C9.74748 16.3868 9.21912 16.023 8.74541 15.6593C8.2717 15.2955 7.9073 14.9795 7.65223 14.7115L7.26962 14.3094C7.1603 14.2328 7.01454 14.0796 6.83235 13.8498C6.65015 13.6201 6.27665 13.1222 5.71184 12.3564C5.14704 11.5905 4.59134 10.7671 4.04475 9.88636C3.49816 9.00558 2.86048 7.84718 2.13169 6.41113C1.40291 4.97509 0.728784 3.49118 0.109318 1.9594C0.0364392 1.76793 0 1.61475 0 1.49987C0 1.38498 0.0182196 1.28925 0.0546588 1.21266L0.109318 1.15522C0.255074 0.92545 0.546588 0.810566 0.983858 0.810566H5.3019C5.41122 0.810566 5.52054 0.839287 5.62985 0.896729L5.90315 1.04033L5.95781 1.09777C6.14 1.21266 6.26754 1.38498 6.34042 1.61475C6.55905 2.15087 6.80502 2.71572 7.07831 3.30928C7.35161 3.90285 7.56113 4.35281 7.70689 4.65916L7.92552 5.1187C8.25348 5.7697 8.5541 6.33455 8.82739 6.81323C9.10069 7.29191 9.34665 7.66528 9.56529 7.93334C9.78392 8.2014 10.0026 8.41202 10.2212 8.5652C10.4398 8.71838 10.622 8.79496 10.7678 8.79496C10.9135 8.79496 11.0593 8.77582 11.2051 8.73752L11.2597 8.65136L11.451 8.27799L11.6697 7.53125L11.8063 6.21009V4.14219C11.7699 3.72095 11.7152 3.32843 11.6423 2.96463C11.5694 2.60083 11.4966 2.34235 11.4237 2.18917L11.369 2.01684C11.114 1.6339 10.6585 1.38498 10.0026 1.2701C9.89324 1.2701 9.92968 1.13607 10.1119 0.868008C10.2941 0.676536 10.4945 0.523358 10.7131 0.408474C11.2597 0.102119 12.4986 -0.0319121 14.4299 0.00638241C15.268 0.00638241 15.9786 0.0829714 16.5616 0.236149C16.7438 0.274444 16.9078 0.341459 17.0535 0.437195C17.1993 0.532931 17.3086 0.666962 17.3815 0.839287C17.4544 1.01161 17.509 1.18394 17.5455 1.35626C17.5819 1.52859 17.6001 1.7775 17.6001 2.103V2.99335C17.5637 3.29971 17.5455 3.68265 17.5455 4.14219V5.52079C17.5455 5.63567 17.5364 5.86544 17.5181 6.21009C17.4999 6.55474 17.4908 6.8228 17.4908 7.01427C17.4908 7.20574 17.509 7.42594 17.5455 7.67485C17.5819 7.92377 17.6457 8.13439 17.7368 8.30671C17.8279 8.47904 17.9463 8.60349 18.0921 8.68008C18.1649 8.71838 18.2469 8.7471 18.338 8.76624C18.4291 8.78539 18.5658 8.72795 18.748 8.59392C18.9302 8.45989 19.1306 8.26842 19.3492 8.0195C19.5678 7.77059 19.8411 7.39722 20.1691 6.89939C20.497 6.40156 20.8432 5.82714 21.2076 5.17614C21.8271 4.0273 22.3919 2.78273 22.902 1.44243C22.9385 1.36584 22.984 1.27967 23.0387 1.18394C23.0933 1.0882 23.1571 1.02119 23.23 0.982892H23.2846L23.3393 0.92545L23.5579 0.868008H23.8859L28.3679 0.810566C28.7687 0.772272 29.1058 0.791419 29.3791 0.868008C29.6524 0.944597 29.8073 1.04033 29.8437 1.15522L29.953 1.32754Z" fill="#8D86C9"/>
+                        </svg>
+                        
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-menu-burger" id="header-menu-burger">
+              <button class="header-menu-burder-button button">
+                <span class="header-menu-burger-link"></span>
+              </button>
+            </div>
+          </header>
+          <div class="line"></div>
+
+          <section class="main-first container">
+            <div class="main-first-header">
+              <h1 class="main-first-header-title title-medium">
+                Петербургский теннисный клуб имени М.А. Пасечникова
+              </h1>
+              <div class="main-first-header-play">
+                <div class="button-border">
+                  <button
+                    class="main-first-header-play-button button button-play btn"
+                  ><span class="playIcons"></span></button>
+                </div>
+                
+                <p class="main-first-header-play-button-text button-play-text">
+                  Посмотрите видео о нашем клубе
+                </p>
+              </div>
+            </div>
+            <div class="main-first-body">
+              <div class="main-first-body-cards cards">
+                <div class="main-first-body-card  btn card_1">
+                  <p class="p-18as">Услуги</p>
+                  <a href="#" class="card-link">
+                    <p class="p-24as">Аренда корта</p>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.2515 20H2.50146C1.83842 20 1.20254 19.7366 0.733698 19.2678C0.264857 18.7989 0.00146484 18.163 0.00146484 17.5V3.75C0.00146484 3.08696 0.264857 2.45107 0.733698 1.98223C1.20254 1.51339 1.83842 1.25 2.50146 1.25H7.50147V3.75H2.50146V17.5H16.2515V12.5H18.7515V17.5C18.7515 18.163 18.4881 18.7989 18.0192 19.2678C17.5504 19.7366 16.9145 20 16.2515 20ZM9.62646 12.1337L7.86397 10.3663L15.7302 2.5H11.2515V0H20.0015V8.75H17.5015V4.26875L9.62646 12.1337Z"
+                      fill="white"
+                    />
+                  </svg>
+                  </a>
+                </div>
+                <div class="main-first-body-card btn card_2">
+                  <p class="p-18as">Услуги</p>
+                  <a href="#" class="card-link">
+                    <p class="p-24as">Аренда корта</p>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.2515 20H2.50146C1.83842 20 1.20254 19.7366 0.733698 19.2678C0.264857 18.7989 0.00146484 18.163 0.00146484 17.5V3.75C0.00146484 3.08696 0.264857 2.45107 0.733698 1.98223C1.20254 1.51339 1.83842 1.25 2.50146 1.25H7.50147V3.75H2.50146V17.5H16.2515V12.5H18.7515V17.5C18.7515 18.163 18.4881 18.7989 18.0192 19.2678C17.5504 19.7366 16.9145 20 16.2515 20ZM9.62646 12.1337L7.86397 10.3663L15.7302 2.5H11.2515V0H20.0015V8.75H17.5015V4.26875L9.62646 12.1337Z"
+                      fill="white"
+                    />
+                  </svg>
+                  </a>
+                  
+                </div>
+                <div class="main-first-body-card btn card_3">
+                  <p class="p-18as">Услуги</p>
+                  <a href="#" class="card-link">
+                    <p class="p-24as">Аренда корта</p>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.2515 20H2.50146C1.83842 20 1.20254 19.7366 0.733698 19.2678C0.264857 18.7989 0.00146484 18.163 0.00146484 17.5V3.75C0.00146484 3.08696 0.264857 2.45107 0.733698 1.98223C1.20254 1.51339 1.83842 1.25 2.50146 1.25H7.50147V3.75H2.50146V17.5H16.2515V12.5H18.7515V17.5C18.7515 18.163 18.4881 18.7989 18.0192 19.2678C17.5504 19.7366 16.9145 20 16.2515 20ZM9.62646 12.1337L7.86397 10.3663L15.7302 2.5H11.2515V0H20.0015V8.75H17.5015V4.26875L9.62646 12.1337Z"
+                      fill="white"
+                    />
+                  </svg>
+                  </a>
+                </div>
+                <div class="main-first-body-card btn card_4">
+                  <p class="p-18as">Услуги</p>
+                  <a href="#" class="card-link">
+                    <p class="p-24as">Аренда корта</p>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.2515 20H2.50146C1.83842 20 1.20254 19.7366 0.733698 19.2678C0.264857 18.7989 0.00146484 18.163 0.00146484 17.5V3.75C0.00146484 3.08696 0.264857 2.45107 0.733698 1.98223C1.20254 1.51339 1.83842 1.25 2.50146 1.25H7.50147V3.75H2.50146V17.5H16.2515V12.5H18.7515V17.5C18.7515 18.163 18.4881 18.7989 18.0192 19.2678C17.5504 19.7366 16.9145 20 16.2515 20ZM9.62646 12.1337L7.86397 10.3663L15.7302 2.5H11.2515V0H20.0015V8.75H17.5015V4.26875L9.62646 12.1337Z"
+                      fill="white"
+                    />
+                  </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      
+      <section class="advantages container">
+        <div class="advantages-cards-image">
+          <div class="card-border advantages-card-image card-image">
+            <div class="overlay  advantages-cards-image-overlay"></div>
+            <img
+              class="advantages-image"
+              src="image/img-cards1jpg.jpg"
+              alt="5 летних 
+                грунтовых кортов"
+            />
+            <h3 class="advantages-title title-image">
+              5 летних грунтовых кортов
+            </h3>
+          </div>
+          <div class="card-border advantages-card-image card-image">
+            <div class="overlay  advantages-cards-image-overlay"></div>
+            <img
+              class="advantages-image"
+              src="image/img-cards2jpg.jpg"
+              alt="Зал с покрытием “Искусственная трава”"
+            />
+            <h3 class="advantages-title title-image">
+              Зал с покрытием “Искусственная трава”
+            </h3>
+          </div>
+          <div class="card-border advantages-card-image card-image">
+            <div class="overlay  advantages-cards-image-overlay"></div>
+            <img
+              class="advantages-image"
+              src="image/img-cards3.jpg"
+              alt="Зал с покрытием
+                “Хард”"
+            />
+            <h3 class="advantages-title title-image">Зал с покрытием “Хард”</h3>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="wrapper-about">
+            <img class="about-image image" src="image/about.jpg" alt="">
+            <div class="about-block">
+                <h2 class="title title-about title-common">Спортивный клуб</h2>
+                <p class="about-text text-title">Imperdiet lorem ipsum, pulvinar aliquet sit ultricies in sit turpis. Ultricies erat pretium risus quam tincidunt non viverra porttitor. Sollicitudin enim nunc in nisi donec vel. Blandit mauris vitae amet aliquet ultrices mauris pellentesque. Non ipsum commodo, sit mi sit netus aenean nisl. ]Donec sit pellentesque enim, vestibulum. 
+                <p class="about-text-bottom text-title">Condimentum hac adipiscing purus in augue nisi. Convallis ut nisi.</p></p>
+                <h4 class="title-description about-title-text">Ornare orci ut dictum nulla fames. </h4>
+                <ul class="about-block-list">
+                    <li class="about-block-item item-text-title">Euismod diam, vel venenatis bibendum sodales sem hendrerit vulputate sagittis. </li>
+                    <li class="about-block-item item-text-title">Nisl senectus sed malesuada donec. Interdum malesuada bibendum imperdiet elementum auctor vitae in. </li>
+                    <li class="about-block-item item-text-title">Quam purus ornare dictum pharetra. Sed viverra tellus sollicitudin urna, sagittis. </li>
+                    <li class="about-block-item item-text-title">Scelerisque urna senectus commodo, nam. Donec nibh tempus imperdiet nisi, tincidunt mus egestas nisl nullam.</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section class="trainers container">
+        <div class="trainers-wrapper-sldr">
+            <header class="trainers-header section-header">
+                <h2 class="title-common">Тренерский состав</h2>
+                    <div class="arrows">
+                        <div class="btn arrow arrow-left" id="arrow-left"></div>
+                        <div class="btn arrow arrow-right" id="arrow-right"></div>
+                    </div>
+            </header>
+            <div class="trainers-body trainers-body-sldr section-body-sldr" id="trainers-body-sldr">
+                <!-- block 1-->
+                <div class="trainers-body-block">
+                    <div class="card-image trainers-card-image"> <img class="trainers-body-block-image" src="sldr/img1.jpg" alt=""></div>
+                    <h4 class="title-description title-name">Pulvinar 
+                        aliquam
+                    </h4>
+                    <p class="text-title trainers-body-text-title">Arcu elit massa amet turpis vel consequat pellentesque sit. </p>
+                </div>
+                <!-- block 2 -->
+                <div class="trainers-body-block">
+                    <div class="card-image trainers-card-image "> <img class="trainers-body-block-image" src="sldr/img2.jpg" alt=""></div>
+                    <h4 class="title-description title-name">Pretium 
+                        odio
+                    </h4>
+                    <p class="text-title trainers-body-text-title">Bibendum aliquam volutpat nisl a duis in nisi. In sed commodo lorem morbi quis.  </p>
+                </div>
+                <!-- block 3 -->
+                <div class="trainers-body-block">
+                    <div class="card-image trainers-card-image"> <img class="trainers-body-block-image" src="sldr/img3.jpg" alt=""></div>
+                    <h4 class="title-description title-name">Aliquet 
+                        consectetur
+                    </h4>
+                    <p class="text-title trainers-body-text-title">Id sapien sed nibh fermentum massa posuere ipsum. Diam in. </p>
+                </div>
+                <!-- block 4 -->
+                <div class="trainers-body-block">
+                    <div class="card-image trainers-card-image"> <img class="trainers-body-block-image" src="sldr/img4.jpg" alt=""></div>
+                    <h4 class="title-description title-name">Blandit 
+                        augue
+                    </h4>
+                    <p class="text-title trainers-body-text-title">Scelerisque accumsan pretium justo, vitae elit. Dolor semper morbi sit auctor vel diam eros. </p>
+                </div>
+                <!-- block 5 -->
+                <div class="trainers-body-block">
+                    <div class="card-image trainers-card-image"> <img class="trainers-body-block-image" src="sldr/img5.jpg" alt=""></div>
+                    <h4 class="title-description title-name">Lorem 
+                        lacus
+                    </h4>
+                    <p class="text-title trainers-body-text-title">Adipiscing amet, viverra dignissim egestas. Sed nibh egestas venenatis faucibus.  </p>
+                </div>
+                <!-- block 6 -->
+                <div class="trainers-body-block">
+                    <div class="card-image trainers-card-image"> <img class="trainers-body-block-image" src="sldr/img6.jpg" alt=""></div>
+                    <h4 class="title-description title-name">Sed 
+                        erat
+                    </h4>
+                    <p class="text-title trainers-body-text-title">Quis ullamcorper pretium lacus risus tellus dolor etiam. </p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="price-and-services container">
+        <div class="price">
+            <h2 class="price-title-common title-common">
+                Цены и абонементы
+            </h2>
+            <div class="price-accordion">
+                <!-- price-accordion 1 -->
+                 <div class="price-accordion-item">
+                  <div class="btn price-accordion-button button"><h4 class="title-text-button-price-accordion">Зимний сезон 2021-2022</h4></div>
+                <div class="accordion-panel accordion-panel1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto recusandae necessitatibus id vero rem asperiores ullam cupiditate. Dolorum eveniet dolore soluta incidunt cum atque culpa non quo nihil voluptatum!
+                    Rem sapiente saepe, obcaecati nesciunt temporibus iusto! Tenetur ipsa nemo officia ipsam exercitationem mollitia eum repellendus libero officiis necessitatibus amet, quod dicta voluptatum in debitis, quae fugit autem, labore ullam!
+                    Praesentium similique saepe expedita quod blanditiis voluptatum esse non laborum quam nesciunt quia illo perferendis eligendi vitae voluptas dolore, est ipsam provident assumenda nemo? Laborum totam voluptas optio molestias inventore?
+                    </p>
+                </div>
+                 </div>
+                
+                <!-- price-accordion 2 -->
+                <div class="price-accordion-item">
+                  <div class="btn price-accordion-button button openAccordion"><h4 class="title-text-button-price-accordion">Зимний сезон 2021-2022</h4></div>
+                <div class="accordion-panel accordion-panel2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto recusandae necessitatibus id vero rem asperiores ullam cupiditate. Dolorum eveniet dolore soluta incidunt cum atque culpa non quo nihil voluptatum!
+                    Rem sapiente saepe, obcaecati nesciunt temporibus iusto! Tenetur ipsa nemo officia ipsam exercitationem mollitia eum repellendus libero officiis necessitatibus amet, quod dicta voluptatum in debitis, quae fugit autem, labore ullam!
+                    Praesentium similique saepe expedita quod blanditiis voluptatum esse non laborum quam nesciunt quia illo perferendis eligendi vitae voluptas dolore, est ipsam provident assumenda nemo? Laborum totam voluptas optio molestias inventore?
+                    </p>
+                </div>
+                 </div>
+                <!-- price-accordion 3 -->
+                <div class="price-accordion-item">
+                  <div class="btn price-accordion-button button openAccordion"><h4 class="title-text-button-price-accordion">Зимний сезон 2021-2022</h4></div>
+                <div class="accordion-panel accordion-panel3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto recusandae necessitatibus id vero rem asperiores ullam cupiditate. Dolorum eveniet dolore soluta incidunt cum atque culpa non quo nihil voluptatum!
+                    Rem sapiente saepe, obcaecati nesciunt temporibus iusto! Tenetur ipsa nemo officia ipsam exercitationem mollitia eum repellendus libero officiis necessitatibus amet, quod dicta voluptatum in debitis, quae fugit autem, labore ullam!
+                    Praesentium similique saepe expedita quod blanditiis voluptatum esse non laborum quam nesciunt quia illo perferendis eligendi vitae voluptas dolore, est ipsam provident assumenda nemo? Laborum totam voluptas optio molestias inventore?
+                    </p>
+                </div>
+                 </div>
+                <!-- price-accordion 4 -->
+                <div class="price-accordion-item">
+                  <div class="btn price-accordion-button button openAccordion"><h4 class="title-text-button-price-accordion">Зимний сезон 2021-2022</h4></div>
+                <div class="accordion-panel accordion-panel4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto recusandae necessitatibus id vero rem asperiores ullam cupiditate. Dolorum eveniet dolore soluta incidunt cum atque culpa non quo nihil voluptatum!
+                    Rem sapiente saepe, obcaecati nesciunt temporibus iusto! Tenetur ipsa nemo officia ipsam exercitationem mollitia eum repellendus libero officiis necessitatibus amet, quod dicta voluptatum in debitis, quae fugit autem, labore ullam!
+                    Praesentium similique saepe expedita quod blanditiis voluptatum esse non laborum quam nesciunt quia illo perferendis eligendi vitae voluptas dolore, est ipsam provident assumenda nemo? Laborum totam voluptas optio molestias inventore?
+                    </p>
+                </div>
+                 </div>
+            </div>
+        </div>
+            <div class="services">
+                <header class="services-header section-header">
+                    <h2 class="title-common">Услуги</h2>
+                    <div class="arrows">
+                        <div class="btn arrow arrow-left"></div>
+                        <div class="btn arrow arrow-right"></div>
+                    </div>
+                </header>
+                <div class="services-body section-body-sldr">
+                  <div class="slides">
+                    <!--services-body-block1 -->
+                  <div class="services-body-block services-body-block1">
+                    <div class="card-image services-body-card-image1">
+                          <h3 class="title-image services-body-block-title">Уютное кафе</h3>
+                    </div>
+                  </div>
+                  <!--services-body-block2 -->
+                  <div class="services-body-block services-body-block2">
+                    <div class="card-image services-body-card-image2">
+                          <h3 class="title-image services-body-block-title">Уютное кафе</h3>
+                    </div>
+                  </div>
+                  </div>
+
+                </div>
+
+            </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-copyright">
+                <p><time datetime="2022">2022</time> © Все права защищены.</p>
+            </div>
+            <div class="footer-menu-nav">
+                <nav class="footer-menu">
+                    <ul class="footer-menu-list">
+                      <li class="footer-menu-item">
+                        <a class="footer-menu-link" href="#">Главная</a>
+                      </li>
+                      <li class="footer-menu-item">
+                        <a class="footer-menu-link" href="#">О клубе</a>
+                      </li>
+                      <li class="footer-menu-item">
+                        <a class="footer-menu-link" href="#">Турниры</a>
+                      </li>
+                      <li class="footer-menu-item">
+                        <a class="footer-menu-link" href="#">Услуги</a>
+                      </li>
+                      <li class="footer-menu-item">
+                        <a class="footer-menu-link" href="#">Детский теннис</a>
+                      </li>
+                      <li class="footer-menu-item">
+                        <a class="footer-menu-link" href="#">Галерея</a>
+                      </li>
+                      <li class="footer-menu-item">
+                        <a class="footer-menu-link" href="#">Цены</a>
+                      </li>
+                      <li class="footer-menu-item">
+                        <a class="footer-menu-link" href="#">Контакты</a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+            <div class="footer-icons">
+                <ul class="footer-icons-list">
+                  <li class="footer-icons-item">
+                    <a href="#" class="footer-icons-youtube">
+                      <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.3719 3.13581C29.2021 2.52999 28.8713 1.9815 28.4146 1.54867C27.9451 1.10253 27.3696 0.783394 26.7425 0.621386C24.3956 0.00277907 14.9927 0.00277921 14.9927 0.00277921C11.0728 -0.0418197 7.15384 0.154337 3.25795 0.590144C2.63083 0.76412 2.05643 1.09039 1.58584 1.53992C1.12344 1.98482 0.78852 2.53345 0.61356 3.13456C0.193273 5.39871 -0.0109306 7.69768 0.00370099 10.0005C-0.0112955 12.3012 0.192407 14.5994 0.61356 16.8664C0.784771 17.465 1.11844 18.0111 1.58209 18.4523C2.04573 18.8934 2.6231 19.2121 3.25795 19.3808C5.63615 19.9982 14.9927 19.9982 14.9927 19.9982C18.9177 20.0428 22.8416 19.8467 26.7425 19.4108C27.3696 19.2488 27.9451 18.9297 28.4146 18.4835C28.877 18.0424 29.2057 17.4937 29.3707 16.8964C29.8019 14.6331 30.0116 12.3332 29.9968 10.0292C30.0292 7.71551 29.8198 5.40474 29.3719 3.13456V3.13581ZM12.0034 14.2795V5.72271L19.8266 10.0017L12.0034 14.2795Z" fill="#8D86C9"/>
+                        </svg>
+                    </a>
+                  </li>
+                  <li class="footer-icons-item">
+                    <a href="#" class="footer-icons-vk">
+                      <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.953 1.32754C30.2081 2.01684 29.4246 3.62521 27.6027 6.15265C27.3476 6.4973 27.0197 6.95683 26.6188 7.53125C25.7807 8.60349 25.307 9.31194 25.1977 9.65659C25.0155 10.1161 25.0884 10.5565 25.4163 10.9777C25.5985 11.2075 26.0176 11.6671 26.6735 12.3564H26.7281V12.4138C28.2222 13.8307 29.2242 15.037 29.7344 16.0326L29.8437 16.2624L29.953 16.6932V17.2389L29.5704 17.6697L28.6412 17.8708L24.6511 17.9856C24.396 18.0239 24.0954 17.9856 23.7492 17.8708C23.4031 17.7559 23.1389 17.641 22.9567 17.5261L22.6287 17.2963C22.3008 17.0666 21.9364 16.7219 21.5356 16.2624C21.1347 15.8029 20.7794 15.3816 20.4697 14.9987C20.16 14.6157 19.8411 14.2998 19.5132 14.0509C19.1852 13.802 18.8937 13.7158 18.6386 13.7924C18.6022 13.7924 18.5567 13.8115 18.502 13.8498C18.4473 13.8881 18.3562 13.9743 18.2287 14.1083C18.1012 14.2424 17.9918 14.4051 17.9008 14.5966C17.8097 14.7881 17.7277 15.0657 17.6548 15.4295C17.5819 15.7933 17.5455 16.2241 17.5455 16.7219C17.5455 16.8751 17.5273 17.0187 17.4908 17.1527C17.4544 17.2868 17.4179 17.3921 17.3815 17.4687L17.3268 17.5261C17.1082 17.7559 16.8167 17.8708 16.4523 17.8708H14.7032C13.938 17.9473 13.1637 17.8708 12.3802 17.641C11.5968 17.4112 10.9135 17.1144 10.3305 16.7506C9.74748 16.3868 9.21912 16.023 8.74541 15.6593C8.2717 15.2955 7.9073 14.9795 7.65223 14.7115L7.26962 14.3094C7.1603 14.2328 7.01454 14.0796 6.83235 13.8498C6.65015 13.6201 6.27665 13.1222 5.71184 12.3564C5.14704 11.5905 4.59134 10.7671 4.04475 9.88636C3.49816 9.00558 2.86048 7.84718 2.13169 6.41113C1.40291 4.97509 0.728784 3.49118 0.109318 1.9594C0.0364392 1.76793 0 1.61475 0 1.49987C0 1.38498 0.0182196 1.28925 0.0546588 1.21266L0.109318 1.15522C0.255074 0.92545 0.546588 0.810566 0.983858 0.810566H5.3019C5.41122 0.810566 5.52054 0.839287 5.62985 0.896729L5.90315 1.04033L5.95781 1.09777C6.14 1.21266 6.26754 1.38498 6.34042 1.61475C6.55905 2.15087 6.80502 2.71572 7.07831 3.30928C7.35161 3.90285 7.56113 4.35281 7.70689 4.65916L7.92552 5.1187C8.25348 5.7697 8.5541 6.33455 8.82739 6.81323C9.10069 7.29191 9.34665 7.66528 9.56529 7.93334C9.78392 8.2014 10.0026 8.41202 10.2212 8.5652C10.4398 8.71838 10.622 8.79496 10.7678 8.79496C10.9135 8.79496 11.0593 8.77582 11.2051 8.73752L11.2597 8.65136L11.451 8.27799L11.6697 7.53125L11.8063 6.21009V4.14219C11.7699 3.72095 11.7152 3.32843 11.6423 2.96463C11.5694 2.60083 11.4966 2.34235 11.4237 2.18917L11.369 2.01684C11.114 1.6339 10.6585 1.38498 10.0026 1.2701C9.89324 1.2701 9.92968 1.13607 10.1119 0.868008C10.2941 0.676536 10.4945 0.523358 10.7131 0.408474C11.2597 0.102119 12.4986 -0.0319121 14.4299 0.00638241C15.268 0.00638241 15.9786 0.0829714 16.5616 0.236149C16.7438 0.274444 16.9078 0.341459 17.0535 0.437195C17.1993 0.532931 17.3086 0.666962 17.3815 0.839287C17.4544 1.01161 17.509 1.18394 17.5455 1.35626C17.5819 1.52859 17.6001 1.7775 17.6001 2.103V2.99335C17.5637 3.29971 17.5455 3.68265 17.5455 4.14219V5.52079C17.5455 5.63567 17.5364 5.86544 17.5181 6.21009C17.4999 6.55474 17.4908 6.8228 17.4908 7.01427C17.4908 7.20574 17.509 7.42594 17.5455 7.67485C17.5819 7.92377 17.6457 8.13439 17.7368 8.30671C17.8279 8.47904 17.9463 8.60349 18.0921 8.68008C18.1649 8.71838 18.2469 8.7471 18.338 8.76624C18.4291 8.78539 18.5658 8.72795 18.748 8.59392C18.9302 8.45989 19.1306 8.26842 19.3492 8.0195C19.5678 7.77059 19.8411 7.39722 20.1691 6.89939C20.497 6.40156 20.8432 5.82714 21.2076 5.17614C21.8271 4.0273 22.3919 2.78273 22.902 1.44243C22.9385 1.36584 22.984 1.27967 23.0387 1.18394C23.0933 1.0882 23.1571 1.02119 23.23 0.982892H23.2846L23.3393 0.92545L23.5579 0.868008H23.8859L28.3679 0.810566C28.7687 0.772272 29.1058 0.791419 29.3791 0.868008C29.6524 0.944597 29.8073 1.04033 29.8437 1.15522L29.953 1.32754Z" fill="#8D86C9"/>
+                        </svg>
+                        
+                    </a>
+                  </li>
+                  <li class="footer-icons-item">
+                    <a href="#" class="footer-icons-telegram">
+                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.65 0.105204L0.933877 6.62189C-0.275178 7.08512 -0.268184 7.7285 0.71205 8.0154L5.2605 9.36887L15.7843 3.03519C16.2819 2.74638 16.7365 2.90175 16.3628 3.21819L7.83648 10.5584H7.83448L7.83648 10.5594L7.52273 15.0315C7.98237 15.0315 8.18521 14.8304 8.44301 14.5931L10.6523 12.5438L15.2477 15.7817C16.095 16.2268 16.7036 15.998 16.9144 15.0334L19.931 1.47202C20.2398 0.291068 19.4584 -0.243649 18.65 0.105204Z" fill="#8D86C9"/>
+                            </svg>                            
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

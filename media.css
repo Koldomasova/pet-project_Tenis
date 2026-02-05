@@ -1,0 +1,197 @@
+@media(max-width:1920px){
+
+}
+@media(max-width:1310px){
+.container {
+        max-width: 1310px;
+        padding-inline: 25px;
+    }
+
+    .advantages-cards-image {
+        flex-direction: column;
+    }
+
+    .price-and-services {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .header-menu-burger-link {
+        width: 40px;
+        height: 3px;
+        background-color: #fff;
+        display: block;
+    }
+    
+    .openMenu .header-menu{
+        top: 107px;
+        left: 0;
+        display: flex;
+    }
+    .header-menu{
+        display: flex;
+        top: 150px;
+        width: 100%;
+        position: absolute;
+    }
+    .news-item-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-menu-burger {
+        cursor: pointer;
+    }
+    .openMenu .header-menu-burger-link{
+        transform: rotate(45deg);
+        transition: transform 0.5s ease;
+    }
+    .openMenu .header-menu-burger-link::before{
+        opacity: 0;
+    }
+    .openMenu .header-menu-burger-link::after{
+                transform: rotate(90deg) translateX(-2px);
+    }
+
+    .header-menu {
+        display: none;
+        top: 150px;
+    }
+    .openMenu .header-menu-list{
+        flex-direction: column;
+        row-gap: 40px;
+        background-color: var(--colorOpenMenu);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 15px 15px;
+    }
+
+    .header-menu-burger {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-menu-burger-link::after,
+    .header-menu-burger-link::before {
+        content: '';
+        width: 40px;
+        height: 3px;
+        background-color: #fff;
+        display: block;
+    }
+
+    .header-menu-burger-link::after {
+        transform: translateY(8px);
+    }
+
+    .header-menu-burger-link::before {
+        transform: translateY(-10px);
+    }
+    .wrapper-about{
+       height: auto;
+       flex-direction: column;
+       align-items: center;
+    }
+    .about-image{
+        left: auto;
+    }
+    .services{
+        width: 100%;
+    }
+    .price-and-services{
+        row-gap: 115px;
+        margin-bottom: 10%;
+    }
+    .footer-container{
+        gap: 15px;
+    }
+
+    .main-first-body{
+        justify-content: center;
+    }
+    .main-first-body-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card_1{
+        grid-area: 1/1;
+    }
+    .card_2{
+        grid-area: 1/2;
+    }
+    .card_3{
+        grid-area: 2/1;
+    }
+    .card_4{
+        grid-area: 2/2;
+    }
+
+}
+@media(max-width:855px){
+    .news-item-cards {
+        grid-template-columns: repeat(1, 1fr);
+}
+}
+@media(max-width:695px){
+    .title-medium{
+        width: auto;
+    }
+    .wrapper{
+        height: 100%;
+    }
+    .main-first-body-cards{
+        display: flex;
+        margin-top: 265px;
+        justify-content: center;
+    }
+    .price-accordion{
+        width: auto;
+    }
+    .about-block{
+        padding: 75px 75px;
+    }
+}
+@media(max-width:425px){
+    .main-first-header{
+        top: 50px;
+    }
+    .title-medium{
+        line-height: 48.2px;
+    }
+    .main-first-body-cards{
+        margin-top: 90px;
+    }
+
+}
+
+@media(max-width:375px){
+    .trainers-header{
+        flex-direction: column;
+    }
+    .title-image{
+        font-size: clamp(11px, 4.12vw, 27px);
+    }
+    .advantages-card-image 
+    .advantages-title{
+        width: 150px;
+    }
+    .about-block{
+        padding: 75px 19px;
+        max-width: 320px;
+    }
+    .main-first-body-card{
+        width: 255px;
+        height: 115px;
+        padding-left: 15px;
+    }
+    .header{
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+    .header-icons-list{
+        gap: 5px;
+    }
+    
+}
+
