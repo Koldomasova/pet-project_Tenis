@@ -445,7 +445,7 @@
  /* main */
  .wrapper{
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url(image/header-img.jpg) center/cover no-repeat;
+  url(img/header-img.jpg) center/cover no-repeat;
   min-height: 1000px;
  }
  .header{
@@ -703,10 +703,10 @@
 }
  /* slider ptractik */
 /* .services-body-card-image2{
-  background-image: url(image/services.jpg);
+  background-image: url(img/services.jpg);
 }
 .services-body-card-image1{
-  background-image: url(image/services2.jpg);
+  background-image: url(img/services2.jpg);
 }
 .services-body-block{
   width: 100%;
@@ -783,10 +783,10 @@
 }
 
 .services-body-block1{
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/services.jpg) center / cover no-repeat;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/services.jpg) center / cover no-repeat;
 }
 .services-body-block2{
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/services2.jpg) center / cover no-repeat;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/services2.jpg) center / cover no-repeat;
 }
 
 
@@ -948,4 +948,5 @@ transform: rotate(270deg);
   .news-item-text-h4{
     width: 336px;
     height: 87px;
+
   }
